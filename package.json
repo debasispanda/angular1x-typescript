@@ -1,0 +1,23 @@
+{
+  "name": "angular1x-typescript",
+  "version": "1.0.0",
+  "description": "angular1x app using typescript",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular1x",
+    "typescript",
+    "for",
+    "angular1x",
+    "angular",
+    "app"
+  ],
+  "author": "Debasis Panda",
+  "license": "ISC"
+}
