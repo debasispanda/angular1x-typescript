@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "app/dist/app.bundle.js",
+        "sourceMap": true
+    },
+    "files":{
+        
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
