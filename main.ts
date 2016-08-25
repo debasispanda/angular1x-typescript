@@ -1,2 +1,2 @@
-import {HeaderComponent} from '/app/components/header/header.component';
+import {HeaderComponent} from './src/components/header/header.component';
 

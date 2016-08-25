@@ -1,8 +1,8 @@
-import {app} from '../app';
+import {app} from '../../app';
 
 export class HeaderComponent{
 	constructor(){
-		showAlert();
+		//showAlert();
 	}
 
 	showAlert(){
