@@ -2,7 +2,7 @@ import {app} from '../../app';
 
 export class HeaderComponent{
 	constructor(){
-		//showAlert();
+		this.showAlert();
 	}
 
 	showAlert(){

@@ -1,4 +1,4 @@
-/// <reference path="../typings/main.d.ts"/>
-import {module} from 'angular';
+/// <reference path="../typings/index.d.ts"/>
+import  'angular';
 
-export let app = module('app',  []);
+export let app = angular.module('app',  []);
