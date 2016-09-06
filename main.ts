@@ -1,2 +1,3 @@
-import {HeaderComponent} from './src/components/header/header.component';
-
+import "angular";
+import "jquery";
+import './src/app';

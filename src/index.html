@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
+
 <head>
 	<title>Angular app using Typescript</title>
+	<style>
+		body{ text-align: center; padding-top: 200px}
+		.sub-header { color: #0040ff; cursor: pointer}
+	</style>
 </head>
-<body>
-<h3>Welcome</h3>
-<div ng-controller="Header" ng-click="showAlert">Header</div>
 
-<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
-<script type="text/javascript" src="dist/js/app.bundle.js"></script>
+<body>
+	<h2>Anagular1x + TypeScript + Webpack</h2>
+	<div ng-controller="Header as Head" ng-click="Head.showAlert()" class="sub-header">
+		<h3>Hi, this is {{Head.author}}. TypeScript is awesome.</h3>
+	</div>
+	<script type="text/javascript" src="dist/js/app.bundle.js"></script>
 </body>
+
 </html>

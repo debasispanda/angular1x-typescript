@@ -1,13 +1,19 @@
-import {app} from '../../app';
-
 export class HeaderComponent{
+	public author:string;
+	public currentDateTime:Date;
 	constructor(){
 		this.showAlert();
+		this.author = "Debasis Panda";
+		//this.setCurrentTime();		
+	}	
+	showAlert():void{
+		alert('Wow, its working fine.');
 	}
-
-	showAlert(){
-		alert('ok');
+	setCurrentTime():void{
+		let self = this;
+		this.currentDateTime = new Date();
+		setTimeout(function(){
+			self.setCurrentTime();
+		}, 50)
 	}
 }
-
-app.controller('Header', HeaderComponent);
