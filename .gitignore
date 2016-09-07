@@ -60,4 +60,5 @@ npm-debug.log
 
 
 # Builds #
-/app/dist/
+/src/dist
+src/dist/js/app.bundle.js

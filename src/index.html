@@ -5,14 +5,16 @@
 	<title>Angular app using Typescript</title>
 	<style>
 		body{ text-align: center; padding-top: 200px}
-		.sub-header { color: #0040ff; cursor: pointer}
+		.sub-header .link{ color: #0040ff; cursor: pointer}
+		.timer{ margin-top: 30px;}
 	</style>
 </head>
 
 <body>
 	<h2>Anagular1x + TypeScript + Webpack</h2>
-	<div ng-controller="Header as Head" ng-click="Head.showAlert()" class="sub-header">
-		<h3>Hi, this is {{Head.author}}. TypeScript is awesome.</h3>
+	<div ng-controller="Header as Head"  class="sub-header">
+		<h3 class="link" ng-click="Head.showAlert()">Hi, this is {{Head.author}}. TypeScript is awesome. </h3>
+		<h1 class="timer">{{ Head.currentDateTime | date:'HH:mm' }}</h1>
 	</div>
 	<script type="text/javascript" src="dist/js/app.bundle.js"></script>
 </body>
