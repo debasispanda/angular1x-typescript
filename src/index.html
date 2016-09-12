@@ -11,11 +11,12 @@
 </head>
 
 <body>
-	<h2>Anagular1x + TypeScript + Webpack</h2>
+	<h2>{{name}}</h2>
 	<div ng-controller="Header as Head"  class="sub-header">
 		<h3 class="link" ng-click="Head.showAlert()">Hi, this is {{Head.author}}. TypeScript is awesome. </h3>
-		<h1 class="timer">{{ Head.currentDateTime | date:'HH:mm' }}</h1>
+		<h1 class="timer">{{ Head.currentDateTime | date:'HH:mm:ss' }}</h1>
 	</div>
+	<h3>{{message}}</h3>
 	<script type="text/javascript" src="dist/js/app.bundle.js"></script>
 </body>
 
