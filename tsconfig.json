@@ -16,6 +16,7 @@
     "typings/browser",
     "typings/main",
     "typings/main.d.ts",
-    "typings/browser.d.ts"
+    "typings/browser.d.ts",
+    "src/*.Spec.ts"
   ]
 }
