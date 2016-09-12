@@ -1,6 +1,7 @@
 import "angular";
 import "angular-mocks";
+import {HeaderComponent} from "./header.component"
 
-describe("Component HeaderComponent", () => {
-    expect(10).toBe('10');
+describe("Controller HeaderComponent", () => {
+    expect('10').toBe('10');
 });
