@@ -15,7 +15,7 @@ $cd angular1x-typescript
 # install the repo with npm
 $npm install
 
-# install all typing definitions (optional)
+# install all typing definitions
 $typings install
 
 # start webpack to bundle
