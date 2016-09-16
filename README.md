@@ -1,6 +1,5 @@
 # Angular Typescript Starter
 
-
 > An Angular basic app using typescript and webpack
 
 ### Quick start
@@ -13,23 +12,18 @@
 # change directory to our repo
 $cd angular1x-typescript
 
-# add required global libraries
-$npm install typings webpack http-server -g
-
 # install the repo with npm
 $npm install
 
-# install all typing definitions
-$typing install jquery~dt --global --save
-$typing install angular~dt --global --save
+# install all typing definitions (optional)
+$typings install
 
 # start webpack to bundle
 $webpack
 
 # Start the http-server
 $cd src
-$http-server
+$lite-server
 
 ```
 go to [http://localhost:8080](http://localhost:8080) in your browser
-
