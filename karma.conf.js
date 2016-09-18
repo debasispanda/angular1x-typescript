@@ -1,6 +1,6 @@
 // Karma configuration
 // Generated on Mon Sep 12 2016 23:47:04 GMT+0530 (India Standard Time)
-
+var webpack = require('webpack');
 module.exports = function(config) {
   config.set({
 
@@ -15,6 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'node_modules/angular/angular.js',
+      'node_modules/angular-mocks/angular-mocks.js',
       'src/**/*Spec.ts'
     ],
 
@@ -24,10 +26,20 @@ module.exports = function(config) {
       '"**/*.swp"'
     ],
 
-
+    webpack: {
+      module: {
+        loaders: [
+          {
+              test: /\.ts$/,
+              loader: 'ts'
+          }
+        ]
+      }
+    },
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'src/**/*.ts': ['webpack']
     },
 
 
@@ -56,7 +68,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'IE'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
