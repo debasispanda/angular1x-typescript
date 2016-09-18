@@ -4,7 +4,7 @@
 
 ### Quick start
 **Make sure you have Node version >= 4.0 and NPM >= 3**
-> Clone/Download the repo then 
+> Clone/Download the repo then
 
 ```bash
 # clone our repo
@@ -20,6 +20,9 @@ $typings install
 
 # Manually start webpack to bundle
 $webpack
+
+# Run test
+$npm run test
 
 # Start the application (This will run webpack first and then lite-server)
 $npm start
