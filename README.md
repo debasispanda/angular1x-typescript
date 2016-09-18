@@ -18,12 +18,11 @@ $npm install
 # install all typing definitions
 $typings install
 
-# start webpack to bundle
+# Manually start webpack to bundle
 $webpack
 
-# Start the http-server
-$cd src
-$lite-server
+# Start the application (This will run webpack first and then lite-server)
+$npm start
 
 ```
-go to [http://localhost:8080](http://localhost:8080) in your browser
+This will open the app at [http://localhost:8080](http://localhost:8080) in your browser

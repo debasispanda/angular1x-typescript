@@ -4,7 +4,9 @@
   "description": "angular1x app using typescript",
   "main": "index.js",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "webpack": "webpack",
+    "start": "npm run webpack && lite-server -c configs/bs-config.json"
   },
   "keywords": [
     "angular1x",
