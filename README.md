@@ -28,4 +28,4 @@ $npm run test
 $npm start
 
 ```
-This will open the app at [http://localhost:8080](http://localhost:8080) in your browser
+This will open the app at [http://localhost:8000](http://localhost:8000) in your browser

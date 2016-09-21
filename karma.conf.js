@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Mon Sep 12 2016 23:47:04 GMT+0530 (India Standard Time)
 var webpack = require('webpack');
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -30,8 +30,8 @@ module.exports = function(config) {
       module: {
         loaders: [
           {
-              test: /\.ts$/,
-              loader: 'ts'
+            test: /\.ts$/,
+            loader: 'ts'
           }
         ]
       }
@@ -39,15 +39,34 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/**/*.ts': ['webpack']
+      'src/**/*.ts': ['webpack'],
+      'src/**/!(*.Spec)+(.ts)': ['coverage']
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
 
+    //Reporter Options
+    coverageReporter: {
+      reporters: [
+        {
+          dir: 'reports/coverage/',
+          subdir: '.',
+          type: 'html'
+        }, {
+          dir: 'reports/coverage/',
+          subdir: '.',
+          type: 'cobertura'
+        }, {
+          dir: 'reports/coverage/',
+          subdir: '.',
+          type: 'json'
+        }
+      ]
+    },
 
     // web server port
     port: 9876,

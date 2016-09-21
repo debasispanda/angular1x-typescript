@@ -62,3 +62,6 @@ npm-debug.log
 # Builds #
 /src/dist
 src/dist/js/app.bundle.js
+
+# Code Coverage #
+/reports
